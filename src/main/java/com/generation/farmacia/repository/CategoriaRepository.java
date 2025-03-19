@@ -7,9 +7,6 @@ import com.generation.farmacia.model.Categoria;
 
 
 
-
-
-
 public interface CategoriaRepository  extends JpaRepository<Categoria,Long>{
 
 	public List<Categoria> findAllByDescricaoContainingIgnoreCase(@Param("descricao") String descricao);//@param busca com like
